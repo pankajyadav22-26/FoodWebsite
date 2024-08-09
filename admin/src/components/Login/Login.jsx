@@ -8,7 +8,7 @@ const Login = ({ onLogin }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const correctPassword = process?.env?.REACT_APP_ADMIN_PASSWORD || '';
+        const correctPassword = process?.env?.VITE_ADMIN_PASSWORD || '';
 
         if (password === correctPassword) {
             onLogin();
