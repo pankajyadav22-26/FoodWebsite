@@ -1,0 +1,82 @@
+/* src/components/Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+}
+
+.login-form {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.login-title {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #222222;
+    font-weight: 600;
+}
+
+.password-container {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1.125rem;
+    transition: border-color 0.3s ease;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #888;
+}
+
+.login-input:focus {
+    border-color: #1e90ff;
+    outline: none;
+}
+
+.login-button {
+    background: linear-gradient(135deg, #1e90ff, #00bfff);
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+    background: linear-gradient(135deg, #00bfff, #1e90ff);
+    transform: scale(1.05);
+}
+
+.login-error {
+    color: #e74c3c;
+    margin-top: 16px;
+    font-size: 1rem;
+    font-weight: 500;
+}
