@@ -11,7 +11,7 @@ import Login from "./components/Login/Login";
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const url = "http://localhost:4000";
+  const url = "https://foodwebsite-backend.onrender.com";
 
   const handleLogin = () => {
     setIsAuthenticated(true);
