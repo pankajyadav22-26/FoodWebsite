@@ -8,7 +8,7 @@ const Login = ({ onLogin }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const correctPassword = process?.env?.VITE_ADMIN_PASSWORD || '';
+        const correctPassword = import.meta.env.VITE_ADMIN_PASSWORD || '';
 
         if (password === correctPassword) {
             onLogin();
@@ -34,7 +34,7 @@ const Login = ({ onLogin }) => {
                         className="password-toggle"
                         onClick={() => setShowPassword(!showPassword)}
                     >
-                        {showPassword ? '👁️' : '👁️'}
+                        {showPassword ? '👁️‍🗨️' : '👁️'}
                     </button>
                 </div>
                 <button type="submit" className="login-button">
